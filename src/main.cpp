@@ -25,7 +25,6 @@ void loop() {
       leds[i] = CRGB(r, g, b);
     }
     FastLED.show();
-    delay(3);
   }
 }
 
