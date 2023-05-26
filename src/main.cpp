@@ -8,7 +8,9 @@ CRGB leds[NUM_LEDS];
 bool newData = false;
 
 void setup() {
-  Serial.begin(250000);  // Start the serial connection
+  // Serial.begin(250000);  // Start the serial connection
+  // Serial.begin(19200);  // Start the serial connection
+  Serial.begin(23000);  // Start the serial connection
 
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);  // LED setup
   FastLED.setBrightness(10);  // Set the brightness of the LEDs
