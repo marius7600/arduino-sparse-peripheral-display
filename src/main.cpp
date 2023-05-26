@@ -1,21 +1,23 @@
 #include <Arduino.h>
 #include <FastLED.h>
 
-#define NUM_LEDS 2  // Anzahl der LEDs
-#define DATA_PIN 2  // Daten-Pin für die LEDs
+#define NUM_LEDS 2  // Number of LEDs
+#define DATA_PIN 2  // Data pin for the LEDs
 
 CRGB leds[NUM_LEDS];
+bool newData = false;
 
 void setup() {
-  Serial.begin(250000);  // Starte die serielle Verbindung
+  Serial.begin(250000);  // Start the serial connection
 
-  FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);  // Setup der LEDs
-  // FastLED.setBrightness();  // Setze die Helligkeit der LEDs
+  FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);  // LED setup
+  FastLED.setBrightness(10);  // Set the brightness of the LEDs
 }
 
 void loop() {
   if (Serial.available() >= NUM_LEDS * 3) {
     byte data[NUM_LEDS * 3];
+
     Serial.readBytes(data, NUM_LEDS * 3);
 
     for (int i = 0; i < NUM_LEDS; i++) {
