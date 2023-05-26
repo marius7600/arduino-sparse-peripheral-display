@@ -8,9 +8,9 @@ CRGB leds[NUM_LEDS];
 bool newData = false;
 
 void setup() {
-  // Serial.begin(250000);  // Start the serial connection
-  // Serial.begin(19200);  // Start the serial connection
-  Serial.begin(23000);  // Start the serial connection
+  Serial.begin(250000);  // Start the serial connection (not working)
+  // Serial.begin(19200);  // Start the serial connection (working fine)
+  // Serial.begin(23000);  // Start the serial connection (working fine)
 
   FastLED.addLeds<WS2812B, DATA_PIN, GRB>(leds, NUM_LEDS);  // LED setup
   FastLED.setBrightness(10);  // Set the brightness of the LEDs
@@ -31,34 +31,3 @@ void loop() {
     FastLED.show();
   }
 }
-
-
-// void example() {
-//   // Print a heartbeat
-//   if (millis() > last_time + 2000)
-//   {
-//     Serial.println("Arduino is alive!!");
-//     last_time = millis();
-//   }
-
-//   switch (Serial.read())
-//   {
-//     case 'A':
-//       leds[0] = CRGB::Green;
-//       leds[1] = CRGB::Green;
-//       FastLED.show();
-//       delay(500);
-//       break;
-//     case 'Z':
-//       leds[0] = CRGB::Blue;
-//       leds[1] = CRGB::Blue;
-//       FastLED.show();
-//       delay(500);
-//       break;
-//     default:
-//       leds[0] = CRGB::Red;
-//       leds[1] = CRGB::Red;
-//       FastLED.show();
-//       break;
-//   }
-// }
