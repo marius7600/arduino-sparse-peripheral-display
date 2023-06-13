@@ -1,7 +1,7 @@
 #include <Arduino.h>
 #include <FastLED.h>
 
-#define NUM_LEDS 2  // Number of LEDs
+#define NUM_LEDS 24  // Number of LEDs
 #define DATA_PIN 2  // Data pin for the LEDs
 #define BAUD_RATE 250000  // Baud rate for the serial connection
 // #define BAUD_RATE 19200  // Baud rate for the serial connection
@@ -9,6 +9,7 @@
 
 CRGB leds[NUM_LEDS];
 bool newData = false;
+int currentLED = 0;
 
 void setup() {
   // Start the serial connection
@@ -19,7 +20,7 @@ void setup() {
   FastLED.setBrightness(10);  // Set the brightness of the LEDs
 }
 
-void loop() {
+void unity() {
   if (Serial.available() >= NUM_LEDS * 3) {
     // data is 3 bytes per LED
     byte data[NUM_LEDS * 3];
@@ -38,4 +39,20 @@ void loop() {
     // Push the data to the LEDs
     FastLED.show();
   }
+}
+
+void ledTest () {
+  // turn current LED on
+  leds[currentLED] = CRGB::White;
+  FastLED.show();
+  
+  delay(100);
+  leds[currentLED] = CRGB::Black;
+  FastLED.show();
+  currentLED = (currentLED + 1) % NUM_LEDS;
+}
+
+void loop () {
+  // unity();
+  ledTest();
 }
