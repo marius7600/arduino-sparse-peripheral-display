@@ -3,8 +3,8 @@
 
 #define NUM_LEDS 48  // Number of LEDs
 #define DATA_PIN 2  // Data pin for the LEDs
-#define BAUD_RATE 350000  // Baud rate for the serial connection
-// #define BAUD_RATE 250000  // Baud rate for the serial connection
+// #define BAUD_RATE 350000  // Baud rate for the serial connection
+#define BAUD_RATE 256000  // Baud rate for the serial connection
 // #define BAUD_RATE 19200  // Baud rate for the serial connection
 // #define BAUD_RATE 23000  // Baud rate for the serial connection
 
