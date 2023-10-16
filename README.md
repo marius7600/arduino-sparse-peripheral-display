@@ -39,7 +39,7 @@ To use this Arduino code for the Sparse Peripheral Display, you will need the fo
 1. An Arduino board capable of controlling LEDs. For this project the Arudino Nano Every was used.
 2. LEDs: The code is configured for 48 WS2812B LEDs. Make sure you have the correct number of LEDs and the appropriate wiring.
 
-   ![circuit](https://github.com/marius7600/arduino-sparse-peripheral-display/assets/56048471/4d592e42-328e-412e-bf8b-7cdb555753c2)
+   ![circuit](https://github.com/marius7600/arduino-sparse-peripheral-display/assets/56048471/8154f7fc-be2d-4172-97c6-864cdcb817cc)
 
 
 Please ensure that you have the required hardware components before proceeding with this code.
