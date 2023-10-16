@@ -54,7 +54,7 @@ Please ensure that you have the required hardware components before proceeding w
 ### Uploading the Code
 
 1. Open the cloned repsoitory in Visual Studio Code.
-2. Configure `main.cpp` to match the setup of your LEDs.
+2. Configure `src/main.cpp` to match the setup of your LEDs.
 3. Build and Upload the code to your Arduino board.
 
 ## Contributing
