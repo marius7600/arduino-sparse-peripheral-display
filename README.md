@@ -22,8 +22,8 @@ This repository is an essential part of the [**Unity Sparse Peripheral Display**
 
 ## Features
 
-- **LED Control:** Receiving the colour values from Unity and controlling the LEDs
-- **Customizable:** Adapt LED configurations, colors, and placement for specific VR headset designs.
+- **LED Control:** Receiving the colour values from Unity and controlling the LEDs.
+- **Customizable:** Adapt the LED configuration for a specific type and number of LEDs.
 
 ## Installation
 
