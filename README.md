@@ -4,7 +4,7 @@
 
 
 
-Welcome to the **Arduino Sparse Peripheral Display** repository! This repository provides the Arduino code for the [**Unity Sparse Peripheral Display**](https://raw.githubusercontent.com/marius7600/unity-sparse-peripheral-display) project.
+Welcome to the **Arduino Sparse Peripheral Display** repository! This repository provides the Arduino code for the [**Unity Sparse Peripheral Display**](https://github.com/marius7600/unity-sparse-peripheral-display) project.
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -17,7 +17,7 @@ Welcome to the **Arduino Sparse Peripheral Display** repository! This repository
 
 ## Introduction
 
-This repository is an essential part of the [**Unity Sparse Peripheral Display**](https://raw.githubusercontent.com/marius7600/unity-sparse-peripheral-display) project which explores a novel approach to enhance the virtual reality experience by utilizing LEDs to extend the field of view (FoV). By intelligently integrating these LEDs and controlling them, the project aims to create a more immersive and engaging VR environment.
+This repository is an essential part of the [**Unity Sparse Peripheral Display**](https://github.com/marius7600/unity-sparse-peripheral-display) project which explores a novel approach to enhance the virtual reality experience by utilizing LEDs to extend the field of view (FoV). By intelligently integrating these LEDs and controlling them, the project aims to create a more immersive and engaging VR environment.
 
 
 ## Features
